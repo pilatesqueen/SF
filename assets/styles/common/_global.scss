@@ -1,0 +1,123 @@
+body {
+  overflow-x: hidden;
+  @include body-font;
+  font-size: 1.1rem;
+}
+@media(min-width:1224px){
+  body{
+    font-size: 1.2rem;
+  }
+}
+
+p {
+  line-height: 1.75;
+  margin-top:1rem;
+}
+
+a {
+  color: $primary;
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+.text-primary {
+  color: $primary !important;
+}
+.red{
+  color: $primary;
+}
+.text-large{
+  p{
+    font-size: 1.2rem;
+    margin-bottom: 1.1rem;
+  }
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  text-transform: uppercase;
+  @include heading-font;
+}
+*,
+ *:before,
+ *:after {
+   box-sizing: border-box;
+   transition: 0.3s ease-in-out;
+ }
+ .bg-primary{
+   background-color: $primary !important;
+   h2.inline-heading{
+     color: $white;
+     display: inline-block;
+     margin-bottom: 0;
+   }
+   .container-fluid{
+     max-width: 1500px;
+   }
+ }
+
+section {
+  padding: 20px 0;
+  h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  h2.script-font{
+    @include script-font;
+    font-weight: 500;
+    font-size: 2.5rem;
+  }
+  h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    @include serif-font;
+  }
+}
+@media(min-width:768px) {
+  section {
+    padding: 50px 0;
+    h2.script-font{
+      font-size: 3.5rem;
+    }
+  }
+}
+// Highlight color customization
+::-moz-selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+::selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+img.round-text{
+  margin-right: 15px;
+  shape-outside: margin-box;
+  float: left;
+  width: 33%;
+  min-width:200px;
+}
+
+body {
+  -webkit-tap-highlight-color: $primary;
+}

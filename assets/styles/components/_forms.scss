@@ -1,0 +1,39 @@
+// Search form
+.search-form {
+  @extend .form-inline;
+}
+.search-form label {
+  font-weight: normal;
+  @extend .form-group;
+  margin-bottom: 0.5rem;
+
+}
+.search-form .search-field {
+  @extend .form-control;
+  border-radius: 0;
+
+}
+.search-form .search-submit {
+  padding: .45rem .75rem;
+font-size: 1rem;
+margin-bottom: 0.5rem;
+.fa{
+  transition: 0s;
+  &:before{
+    transition: 0s;
+  }
+}
+}
+
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"],
+input[type="text"], textarea {
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    width: 100%;
+    font-size: 1rem;
+    line-height:1.5 !important;
+  }
+  label{
+    font-size: 1.1rem;
+  }
